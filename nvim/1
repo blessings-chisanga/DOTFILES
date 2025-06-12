@@ -1,0 +1,19 @@
+set clipboard=unnamedplus
+set ignorecase
+set incsearch
+call plug#begin()
+Plug 'folke/tokyonight.nvim'
+" Install nvim-treesitter for advanced syntax highlighting
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+call plug#end()
+
+lua << EOF
+require'nvim-treesitter.configs'.setup {
+  ensure_installed = "c",  -- Ensure C is installed
+  highlight = {
+    enable = true,  -- Enable syntax highlighting
+    additional_vim_regex_highlighting = false,  -- Disable default Vim highlighting for better Treesitter performance
+  },
+}
+EOF
+

@@ -1,0 +1,74 @@
+
+
+[[keyboard.bindings]]
+action = "SpawnNewInstance"
+key = "Return"
+mods = "Super|Shift"
+
+[[keyboard.bindings]]
+key = "F11"
+action = "ToggleFullscreen"
+
+[general]
+import = ["/home/blessings/.config/alacritty/catppuccin-mocha.toml"]
+
+[terminal]
+
+[font]
+size = 13
+
+[font.bold]
+family = "Firacode Nerd Font Mono"
+style = "Bold"
+
+[font.bold_italic]
+family = "Firacode Nerd Font Mono"
+style = "Bold Italic"
+
+[font.italic]
+family = "Firacode Nerd Font Mono"
+style = "Italic"
+
+[font.normal]
+family = "Firacode Nerd Font Mono"
+style = "Regular"
+
+[scrolling]
+history = 10000
+multiplier = 3
+
+[selection]
+save_to_clipboard = true
+
+[terminal.shell]
+program = "/usr/bin/bash"
+
+[window]
+
+dynamic_padding = true
+startup_mode = "Maximized"
+opacity = 0.80
+decorations = "none"
+
+[window.class]
+general = "Alacritty"
+instance = "Alacritty"
+
+[window.padding]
+x = 0
+y = 0
+
+[colors]
+draw_bold_text_with_bright_colors = true
+
+[keyboard]
+
+[[keyboard.bindings]]
+key = "C"
+mods = "Control|Shift"
+action = "copy"
+
+[[keyboard.bindings]]
+key = "V"
+mods = "Control|Shift"
+action = "paste"
